@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        body>nav{
+            /*box-shadow:-12px 7px 20px 6px black;*/
+            width: 50%;
+            height: 500px;
+            /*margin-top: 50px;*/
+            /*margin-bottom: 50px;*/
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border: 1px solid black;
+            right: 200px;
+
+        }
+        nav>div{
+            height: 50px;
+            width: 230px;
+            box-shadow:-12px 7px 20px 6px black;
+        }
+        nav>div:hover{
+            margin-left: 200px;
+            transition: all 3s;
+        }
+        div>h1{
+
+            padding-left: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<nav>
+    <div style="background: #ff253a"><h1>MARGIN 1</h1></div>
+    <div style="background: #2d2626"><h1>MARGIN 2</h1></div>
+    <div style="background: lime"><h1>MARGIN 3</h1></div>
+    <div style="background: darkgreen"><h1>MARGIN 4</h1></div>
+    <div style="background: deeppink"><h1>MARGIN 5</h1></div>
+
+</nav>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CardUingStickey</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        body>section:nth-child(1){
+            height: 100vh;
+            background: white;
+            border: 1px solid black;
+        }
+        body>section:nth-child(1)>div{
+            height: 100px;
+            background: red;
+            position: sticky;
+            top: 0;
+        }
+        body>section:nth-child(2){
+            height: 100vh;
+            background: blue;
+            border: 1px solid black;
+        }
+        body>section:nth-child(2)>div{
+            height: 100px;
+            background: green;
+            position: sticky;
+            top: 0;
+        }
+        body>section:nth-child(3){
+            height: 100vh;
+            background: slategrey;
+            border: 1px solid black;
+        }
+        body>section:nth-child(3)>div{
+            height: 100px;
+            background: black;
+            position: sticky;
+            top: 0;
+        }
+        body>section:nth-child(4){
+            height: 100vh;
+            background: darkviolet;
+            border: 1px solid black;
+        }
+        body>section:nth-child(4)>div{
+            height: 100px;
+            background: navy;
+            position: sticky;
+            top: 0;
+        }
+        div>h1{
+            margin: 0;
+            padding: 30px;
+            color: white;
+            font-size: 30px;
+        }
+        section>h1{
+            position: absolute;
+            font-size: 150px;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: max-content;
+            height: max-content;
+            z-index: 1;
+
+        }
+        body>section>div{
+            z-index: 2;
+        }
+        section{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div><h1>card 01</h1></div>
+        <h1>Hello</h1>
+    </section>
+    <section>
+        <div><h1>card 2</h1></div>
+        <h1>How</h1>
+    </section>
+    <section>
+        <div><h1>card 3</h1></div>
+        <h1>are</h1>
+    </section>
+    <section>
+        <div><h1>card 4</h1></div>
+        <h1>You</h1>
+    </section>
+</body>
+</html>

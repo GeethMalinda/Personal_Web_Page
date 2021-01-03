@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Image Slider</title>
+  <link rel="stylesheet" href="Assets/CSS/normalize.css">
+  <style>
+    img:nth-child(2){
+      margin-left: 100vw;
+    }
+    img:nth-child(3){
+      margin-left: 200vw;
+
+    }
+    img:nth-child(4){
+      margin-left: 300vw;
+
+    }
+    img:nth-child(5){
+      margin-left: 400vw;
+
+    }
+    img {
+      width: 100vw;
+      position: absolute;
+      top: 700px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    body {
+      overflow: hidden;
+      background: #494141;
+      background: url("sliderAssects/544020.jpg");
+    }
+
+    main {
+      position: absolute;
+
+      animation-name: slider;
+      animation-duration: 6s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-delay: 1s;
+    }
+
+    @keyframes slider {
+      0%{
+        margin-left: 0vw;
+      }
+
+      25%{
+        margin-left: -100vw;
+      }
+      50%{
+        margin-left: -200vw;
+      }
+      75%{
+        margin-left: -300vw;
+      }
+      100%{
+        margin-left: -400vw;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <img src="sliderAssects/london830775.jpg">
+  <img src="sliderAssects/new_york.jpg">
+  <img src="sliderAssects/shanghai.jpg">
+  <img src="sliderAssects/hongkong1081704%20(1).jpg">
+  <img src="sliderAssects/london830775.jpg">
+
+
+
+</main>>
+</body>

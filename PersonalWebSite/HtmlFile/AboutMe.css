@@ -1,0 +1,110 @@
+#Aboutme{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1300px;
+  /* padding: 100px 20px; */
+  padding: 148px;
+  margin-top: 170px;
+  margin-bottom: -38px;
+}
+#Aboutme>div{
+  display: flex;
+  flex-direction: row-reverse;
+
+
+}
+#Aboutme-aside>h1{
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+#Aboutme-aside>h1>span{
+  color: crimson;
+}
+#Aboutme-aside>p{
+  font-size: 1rem;
+  /*font-weight: 300;*/
+  line-height: 1.9rem;
+  /*letter-spacing: 0.05rem;*/
+  text-align: center;
+  margin-bottom: 27px;
+}
+#Aboutme-aside>a{
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 30px;
+  border: 2px solid crimson;
+  color:black;
+  background-color: transparent;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  transition: .3s ease;
+  transition-property: background-color ,color;
+  margin-bottom: 30px;
+}
+#Aboutme-aside>a:hover{
+  color: white;
+  background-color: crimson;
+}
+
+#Aboutme-aside>h2{
+
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+#Aboutme-img{
+  width: 500px;
+  height: 460px;
+  padding: 10px;
+
+}
+#Aboutme-div{
+
+  border: 7px solid crimson;
+  position: relative;
+  height: 393px;
+  width: 347px;
+  right: 0px;
+}
+
+
+#Aboutme-div>img{
+
+  height: 402px;
+  width: 342px;
+  position: relative;
+  left: 7px;
+  bottom: 31px;
+  /* border: 12px solid white; */
+  border-bottom: 7px solid white;
+  border-left: 7px solid white;
+}
+
+
+
+/*#Aboutme-img::after{*/
+/*  position: absolute;*/
+/*  top: 30px;*/
+/*  left: -33px;*/
+/*  height: 98%;*/
+/*  width: 98%;*/
+/*  border: 7px solid crimson;*/
+
+/*}*/
+#Aboutme-aside{
+  width: 100%;
+}
+
+
+
+

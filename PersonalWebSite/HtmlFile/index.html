@@ -1,0 +1,1869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>My Official Page</title>
+  <link rel="stylesheet" href="Asignment.css">
+  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="Header.css">
+  <link rel="stylesheet" href="Projects.css">
+  <link rel="stylesheet" href="AboutMe.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="Skills.css">
+  <link rel="stylesheet" href="footer.css">
+
+  <style>
+
+    #loder{
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background: black;
+      z-index: 4;
+    }
+    #loimg{
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      height: 300px;
+      width: 300px;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+
+    }
+    html{
+      font-family: 'Montserrat', sans-serif;
+
+    }
+    body{
+      overflow-x: hidden;
+
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    a{
+      text-decoration: none;
+    }
+    p{
+      text-align: left;
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+    }
+
+   @media all and (min-width: 320px) and (max-width: 375px) {
+     header{
+       position: absolute;
+       height: 59px;
+     }
+     header > div > h1 > a {
+       text-decoration: none;
+       color: white;
+       margin-left: 0px;
+       position: absolute;
+       bottom: 6px;
+       right: -31px;
+     }
+     header > div > h1 {
+       text-transform: uppercase;
+       color: white;
+       font-size: 10px;
+       margin-left: 27px;
+       transform: translateX(-100rem);
+       animation: header-Animation 0.5s forwards;
+       animation-delay: 1s;
+     }
+
+     header > div > nav {
+       position: absolute;
+       font-size: 6px;
+       bottom: 100px;
+
+     }
+     #firstSection{
+       background: url("Assests/laptop_mug_garland_151742_240x320.jpg");
+       background-size: cover;
+       background-position: top center;
+       position: relative;
+       z-index: 1;
+
+     }
+
+     #firstSection > section > div {
+       position: absolute;
+       left: 51px;
+       bottom: 240px;
+     }
+
+     #firstSection > section > div > h1 {
+       /* font-family: 'Montserrat', sans-serif; */
+       display: block;
+       position: relative;
+       font-size: 2rem;
+       width: fit-content;
+       color: transparent;
+       /* margin-bottom: 30px; */
+       animation: text 1s ease forwards;
+       animation-delay: 0.5s;
+     }
+
+     header > div > nav > ul > li > a {
+       margin-right: -30px;
+       padding-right: 0;
+     }
+
+     #firstSection > section > div > a {
+       text-decoration: none;
+       font-family: 'Montserrat', sans-serif;
+       padding: 6px 22px;
+       border: 2px solid crimson;
+       color: white;
+       background-color: transparent;
+       font-size: 17px;
+
+     }
+
+     header > div > h1 > a {
+       text-decoration: none;
+       color: white;
+       margin-left: 0px;
+       position: absolute;
+       bottom: 6px;
+       right: -31px;
+     }
+     header>div>nav>ul>li>a {
+       margin-right: -12px;
+       padding-right: 0;
+     }
+
+
+   }
+
+    /*//aboutme*/
+
+    @media all and (min-width: 320px) and (max-width: 375px){
+      #Aboutme {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1300px;
+        /* padding: 100px 20px; */
+        padding: 148px;
+        margin-top: 170px;
+        margin-bottom: -38px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #Aboutme>div {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+      #Aboutme-aside {
+        width: 100%;
+        position: relative;
+        bottom: 20rem;
+        right: 0rem;
+      }
+      #Aboutme-div {
+        border: 7px solid crimson;
+        position: relative;
+        height: 277px;
+        width: 263px;
+        left: 102px;
+        bottom: 276px;
+      }
+      #Aboutme-aside>a {
+        font-size: 0.6rem;
+        position: relative;
+        left: -3px;
+      }
+      #Aboutme-div>img {
+        height: 286px;
+        width: 232px;
+        position: relative;
+        left: -3px;
+        bottom: 26px;
+        /* border: 12px solid white; */
+        border-bottom: 7px solid white;
+        border-left: 7px solid white;
+      }
+
+      #Aboutme-aside>h1{
+        font-size: 2.5rem;
+        margin-top: 4rem;
+      }
+      #Aboutme-aside>p{
+        font-size: 0.7rem;
+      }
+    }
+    /*service*/
+    @media all and (min-width: 320px) and (max-width: 375px){
+
+      #services-div>section:first-child>h1{
+        font-size: 2rem;
+      }
+      #services-div>section:first-child>p {
+        font-size: 0.7rem;
+        font-weight: 300;
+        line-height: 1.5rem;
+        letter-spacing: 0.05rem;
+        margin-top: 5px;
+        padding: 0px 50px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      #services-div>section:last-child>div{
+        flex-basis: 100%;
+        background-size: 160% 200%;
+        height: 298px;
+      }
+      #services-div>section:last-child>div>h1 {
+        font-size: 1rem;
+      }
+      #services-div>section:last-child>div>p{
+        font-size: 0.8rem;
+      }
+        #services-div>section:nth-child(2)>div>div>img {
+        width: 60%;
+        height: 81%;
+        object-fit: cover;
+      }
+
+
+    }
+
+      /*projects*/
+      @media all and (min-width: 320px) and (max-width: 375px) {
+
+        #project-info > h1 {
+          font-size: 1.5rem;
+          font-weight: 500;
+
+        }
+
+        #project-info > p {
+          color: white;
+          font-size: 0.7rem;
+        }
+
+        #project-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          width: 100%;
+          margin: 0;
+          overflow: hidden;
+          border-radius: 0;
+          height: 756px;
+          margin: -9rem 0;
+        }
+
+        #project-info {
+          display: flex;
+          height: 100%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 14px;
+          flex-basis: 30%;
+          background: linear-gradient(60deg, #29323c 0%, #485564 100%);
+          color: white;
+        }
+
+        #project-items {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin: 10px;
+        }
+
+        #project-img {
+          height: 100%;
+          flex-basis: 28%;
+          overflow: hidden;
+        }
+
+        #project-heder > h1 {
+          font-size: 2rem;
+          font-weight: 300;
+          color: black;
+          margin-bottom: -77px;
+          text-transform: uppercase;
+          letter-spacing: 0.2rem;
+          text-align: center;
+          margin-top: -3rem;
+        }
+
+        #project-item:nth-child(even) {
+          flex-direction: column;
+        }
+      }
+    /*About*/
+    @media all and (min-width: 320px) and (max-width: 375px){
+      #skill-header>h1 {
+        font-size: 2rem;
+      }
+      #skill-range {
+        width: 286px;
+        background: white;
+        display: block;
+        height: 6px;
+        border: 2px solid crimson;
+        border-radius: 3px;
+        box-shadow: 0 0 10px crimson;
+        position: relative;
+      }
+      #skill-items {
+
+        margin-top: 1rem;
+      }
+      #services-div {
+
+        margin-top: -36rem;
+      }
+    }
+    @media all and (min-width: 320px) and (max-width: 375px) {
+      #contact-title > h1 {
+        font-size: 2rem;
+      }
+
+      #contact-items {
+
+        flex-direction: column;
+      }
+
+      #contact-container {
+        padding-top: 0;
+      }
+
+      .footer-name > h1 {
+
+        font-size: 1rem;
+      }
+
+      .footer-container > h2 {
+
+        font-size: 0.8rem;
+
+      }
+
+      .social-icon {
+        width: 27px;
+
+      }
+
+      .social-icons {
+        margin-bottom: 8px;
+      }
+
+
+      .footer-container {
+        padding-top: 24px;
+        padding-bottom: 0;
+      }
+    }
+      /*////////////////////////////////////////////////////////////////*/
+    @media all and (min-width: 375px) and (max-width: 425px){
+
+      #firstSection{
+        background: url("Assests/laptop_phone_desktop_179989_240x320.jpg");
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+        z-index: 1;
+
+      }
+      header{
+        height: 57px;
+        position: absolute;
+      }
+
+      header > div > h1 > a {
+        text-decoration: none;
+        color: white;
+        margin-left: 0px;
+        position: absolute;
+        bottom: 6px;
+        right: -74px;
+      }
+
+      header > div > nav {
+        position: absolute;
+        bottom: 100px;
+        font-size: 3px;
+
+      }
+
+      #firstSection > section > div {
+        position: absolute;
+        left: 51px;
+        bottom: 240px;
+      }
+
+      #firstSection > section > div > h1 {
+        /* font-family: 'Montserrat', sans-serif; */
+        display: block;
+        position: relative;
+        font-size: 2rem;
+        width: fit-content;
+        color: transparent;
+        /* margin-bottom: 30px; */
+        animation: text 1s ease forwards;
+        animation-delay: 0.5s;
+      }
+
+      header > div > nav > ul > li > a {
+        margin-right: -12px;
+        padding-right: 0;
+      }
+
+      #firstSection > section > div > a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        padding: 6px 22px;
+        border: 2px solid crimson;
+        color: white;
+        background-color: transparent;
+        font-size: 21px;
+
+      }
+
+      header > div > h1 > a {
+        text-decoration: none;
+        color: white;
+        margin-left: 0px;
+        position: absolute;
+        bottom: 6px;
+        right: -31px;
+      }
+
+
+      header > div > h1 {
+        text-transform: uppercase;
+        color: white;
+        font-size: 12px;
+        margin-left: 50px;
+        transform: translateX(-100rem);
+        animation: header-Animation 0.5s forwards;
+        animation-delay: 1s;
+      }
+    }
+
+
+
+    @media all and (min-width: 375px) and (max-width: 425px){
+      #services-div>section:first-child>h1{
+        font-size: 2.5rem;
+      }
+      #services-div>section:first-child>p {
+        font-size: 0.7rem;
+        font-weight: 300;
+        line-height: 1.5rem;
+        letter-spacing: 0.05rem;
+        margin-top: 5px;
+        padding: 0px 50px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      #services-div>section:last-child>div{
+        flex-basis: 100%;
+        background-size: 160% 200%;
+        height: 298px;
+      }
+      #services-div>section:last-child>div>h1 {
+        font-size: 1rem;
+      }
+      #services-div>section:last-child>div>p{
+        font-size: 0.8rem;
+      }
+      #services-div>section:nth-child(2)>div>div>img {
+        width: 60%;
+        height: 81%;
+        object-fit: cover;
+      }
+
+    }
+      @media all and (min-width: 375px) and (max-width: 425px){
+        #Aboutme {
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          margin: 0 auto;
+          max-width: 1300px;
+          /* padding: 100px 20px; */
+          padding: 148px;
+          margin-top: 170px;
+          margin-bottom: -38px;
+          justify-content: center;
+          align-items: center;
+        }
+
+        #Aboutme>div {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+        }
+        #Aboutme-aside {
+          width: 100%;
+          position: relative;
+          bottom: 18rem;
+          right: 0px;
+        }
+        #Aboutme-div {
+          border: 7px solid crimson;
+          position: relative;
+          height: 321px;
+          width: 313px;
+          right: 125px;
+          bottom: 240px;
+        }
+        #Aboutme-aside>a{
+          font-size: 0.6rem;
+        }
+        #Aboutme-img {
+          width: 500px;
+          height: 460px;
+          padding: 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          bottom: 75px;
+          left: -100px;
+        }
+        #Aboutme-div>img {
+          height: 332px;
+          width: 277px;
+          position: relative;
+          left: 0px;
+          bottom: 26px;
+          /* border: 12px solid white; */
+          border-bottom: 7px solid white;
+          border-left: 7px solid white;
+        }
+        #Aboutme-aside>h1{
+          font-size: 2.5rem;
+          margin-top: 4rem;
+        }
+        #Aboutme-aside>p{
+          font-size: 0.8rem;
+        }
+
+      }
+
+      @media all and (min-width: 375px) and (max-width: 425px){
+        #skill-header>h1 {
+          font-size: 2.5rem;
+        }
+        #skill-range {
+          width: 348px;
+          background: white;
+          display: block;
+          height: 6px;
+          border: 2px solid crimson;
+          border-radius: 3px;
+          box-shadow: 0 0 10px crimson;
+          position: relative;
+        }
+        #skill-items {
+
+          margin-top: 1rem;
+        }
+      }
+
+      @media all and (min-width: 375px) and (max-width: 425px){
+
+      #project-info > h1 {
+        font-size: 1.5rem;
+        font-weight: 500;
+
+      }
+
+      #project-info > p {
+        color: white;
+        font-size: 0.7rem;
+      }
+      #project-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 85%;
+        margin: 0;
+        overflow: hidden;
+        border-radius: 0;
+        height: 756px;
+        margin: -6rem 0;
+      }
+      #project-info {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 14px;
+        flex-basis: 30%;
+        background: linear-gradient(60deg,#29323c 0%,#485564 100%);
+        color: white;
+      }
+
+      #project-items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+      }
+      #project-img {
+        height: 100%;
+        flex-basis: 28%;
+        overflow: hidden;
+      }
+      #project-heder>h1 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: black;
+        margin-bottom: -77px;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        margin-top: -3rem;
+      }
+      #project-item:nth-child(even) {
+        flex-direction: column;
+      }
+
+    }
+    @media all and (min-width: 375px) and (max-width: 425px){
+      #contact-title > h1 {
+        font-size: 2rem;
+      }
+
+      #contact-items {
+
+        flex-direction: column;
+      }
+
+      #contact-container {
+        padding-top: 0;
+      }
+
+      .footer-name > h1 {
+
+        font-size: 1rem;
+      }
+
+      .footer-container > h2 {
+
+        font-size: 0.8rem;
+
+      }
+
+      .social-icon {
+        width: 27px;
+
+      }
+
+      .social-icons {
+        margin-bottom: 8px;
+      }
+
+
+      .footer-container {
+        padding-top: 24px;
+        padding-bottom: 0;
+      }
+
+    }
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+    @media all and (min-width: 425px) and (max-width: 768px){
+
+      header{
+        height: 57px;
+        position: absolute;
+
+      }
+
+      header > div > h1 > a {
+        text-decoration: none;
+        color: white;
+        margin-left: 0px;
+        position: absolute;
+        bottom: 6px;
+        right: -31px;
+      }
+
+      header > div > nav {
+        position: absolute;
+        bottom: 28px;
+        font-size: 3px;
+        bottom: 100px;
+
+      }
+
+      #firstSection > section > div {
+        position: absolute;
+        left: 51px;
+        bottom: 240px;
+      }
+
+      #firstSection > section > div > h1 {
+        /* font-family: 'Montserrat', sans-serif; */
+        display: block;
+        position: relative;
+        font-size: 3rem;
+        width: fit-content;
+        color: transparent;
+        /* margin-bottom: 30px; */
+        animation: text 1s ease forwards;
+        animation-delay: 0.5s;
+      }
+
+      header > div > nav > ul > li > a {
+        margin-right: -12px;
+        padding-right: 0;
+      }
+
+      #firstSection > section > div > a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        padding: 6px 22px;
+        border: 2px solid crimson;
+        color: white;
+        background-color: transparent;
+        font-size: 21px;
+
+      }
+
+      header > div > h1 > a {
+        text-decoration: none;
+        color: white;
+        margin-left: 0px;
+        position: absolute;
+        bottom: 2px;
+        right: -31px;
+      }
+
+
+      header > div > h1 {
+        text-transform: uppercase;
+        color: white;
+        font-size: 13px;
+        margin-left: 51px;
+        transform: translateX(-100rem);
+        animation: header-Animation 0.5s forwards;
+        animation-delay: 1s;
+      }
+      #firstSection{
+        background: url("Assests/laptop_keys_gradient_167934_240x320.jpg");
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+        z-index: 1;
+
+      }
+    }
+
+    @media all and (min-width: 425px) and (max-width:768px){
+
+      #services-div{
+        margin-top:-28rem;;
+      }
+      #services-div>section{
+        margin: 25px 125px;
+      }
+
+      #services-div>section:first-child>h1{
+        font-size: 2.5rem;
+      }
+      #services-div>section:first-child>p {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.5rem;
+        letter-spacing: 0.05rem;
+        margin-top: 5px;
+        padding: 0px 50px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      #services-div>section:last-child>div{
+        flex-basis: 100%;
+        background-size: 160% 200%;
+        height: 298px;
+      }
+      #services-div>section:last-child>div>h1 {
+        font-size: 1.5rem;
+      }
+      #services-div>section:last-child>div>p{
+        font-size: 1rem;
+      }
+      #services-div>section:nth-child(2)>div>div>img {
+        width: 60%;
+        height: 81%;
+        object-fit: cover;
+      }
+
+    }
+    @media all and (min-width: 425px) and (max-width: 768px){
+
+      #project-info > h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+
+      }
+
+      #project-info > p {
+        color: white;
+        font-size: 1rem;
+      }
+      #project-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 95%;
+        margin:10px;
+        overflow: hidden;
+        border-radius: 0;
+        height: 756px;
+        margin: -5rem 0;
+      }
+      #project-info {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 14px;
+        flex-basis: 30%;
+        background: linear-gradient(60deg,#29323c 0%,#485564 100%);
+        color: white;
+      }
+
+      #project-items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+      }
+      #project-img {
+        height: 100%;
+        flex-basis: 28%;
+        overflow: hidden;
+      }
+      #project-heder>h1 {
+        font-size: 3rem;
+        font-weight: 300;
+        color: black;
+        margin-bottom: -77px;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        margin-top: -3rem;
+      }
+      #project-item:nth-child(even) {
+        flex-direction: column;
+      }
+
+    }
+
+    @media all and (min-width: 425px) and (max-width:768px){
+
+      #skill-header>h1 {
+        font-size: 2.5rem;
+
+      }
+
+      #skill-items {
+
+        margin-top: 1rem;
+      }
+      #skill-range {
+        width: 375px;
+        background: white;
+        display: block;
+        height: 6px;
+        border: 2px solid crimson;
+        border-radius: 3px;
+        box-shadow: 0 0 10px crimson;
+        position: relative;
+      }
+    }
+
+    @media all and (min-width: 425px) and (max-width:768px){
+
+      #contact-title > h1 {
+        font-size: 2.5rem;
+      }
+
+      #contact-items {
+
+        flex-direction: column;
+      }
+      #contact-item{
+        margin-left: 30px;
+      }
+
+      #contact-container {
+        padding-top: 0;
+      }
+
+      .footer-name > h1 {
+
+        font-size: 1.5rem;
+      }
+
+      .footer-container > h2 {
+
+        font-size: 1rem;
+
+      }
+
+      .social-icon {
+        width: 27px;
+
+      }
+
+      .social-icons {
+        margin-bottom: 8px;
+      }
+
+
+      .footer-container {
+        padding-top: 24px;
+        padding-bottom: 0;
+      }
+
+    }
+
+    @media all and (min-width: 425px) and (max-width: 768px){
+
+      #Aboutme {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1300px;
+        /* padding: 100px 20px; */
+        padding: 148px;
+        margin-top: 170px;
+        margin-bottom: -38px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #Aboutme>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      #Aboutme-aside {
+        width: 100%;
+        position: relative;
+        bottom: 18rem;
+      }
+      #Aboutme-div {
+        border: 7px solid crimson;
+        position: relative;
+        height: 321px;
+        width: 313px;
+        right: -79px;
+        bottom: 240px;
+      }
+      #Aboutme-aside>a{
+        font-size: 1rem;
+      }
+      #Aboutme-div>img {
+        height: 332px;
+        width: 277px;
+        position: relative;
+        left: 0px;
+        bottom: 26px;
+        /* border: 12px solid white; */
+        border-bottom: 7px solid white;
+        border-left: 7px solid white;
+      }
+      #Aboutme-aside>h1{
+        font-size: 2.5rem;
+        margin-top: 4rem;
+      }
+
+
+    }
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+    @media all and (min-width: 768px) and (max-width: 1024px){
+
+      header{
+        height: 70px;
+        position: absolute;
+
+      }
+
+      header > div > h1 > a {
+        text-decoration: none;
+        color: white;
+        margin-left: 0px;
+        position: absolute;
+        bottom: 6px;
+        right: -31px;
+      }
+
+      header > div > nav {
+        position: absolute;
+        font-size: 3px;
+        bottom: 2rem;
+        left: 14rem;
+        font-size: 10px;
+
+      }
+
+      #firstSection > section > div {
+        position: absolute;
+        left: 51px;
+        bottom: 240px;
+      }
+
+      #firstSection > section > div > h1 {
+        /* font-family: 'Montserrat', sans-serif; */
+        display: block;
+        position: relative;
+        font-size: 3rem;
+        width: fit-content;
+        color: transparent;
+        /* margin-bottom: 30px; */
+        animation: text 1s ease forwards;
+        animation-delay: 0.5s;
+      }
+
+      header > div > nav > ul > li > a {
+        margin-right: 0;
+        padding-right: 0;
+      }
+
+      #firstSection > section > div > a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        padding: 6px 22px;
+        border: 2px solid crimson;
+        color: white;
+        background-color: transparent;
+        font-size: 21px;
+
+      }
+
+      header > div > h1 > a {
+        text-decoration: none;
+        color: white;
+        margin-left: 0px;
+        position: absolute;
+        bottom: -3px;
+        right: -31px;
+      }
+
+
+      header > div > h1 {
+        text-transform: uppercase;
+        color: white;
+        font-size: 14px;
+        margin-left: 51px;
+        transform: translateX(-100rem);
+        animation: header-Animation 0.5s forwards;
+        animation-delay: 1s;
+      }
+      #firstSection{
+        background: url("Assests/wallpapersden.com_laptop-room-on-the-desk_wxl.jpg");
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+        z-index: 1;
+
+      }
+    }
+
+    @media all and (min-width: 768px) and (max-width:1024px){
+
+      #services-div{
+        margin-top:-28rem;;
+      }
+
+      #services-div>section:first-child>h1{
+        font-size: 3rem;
+      }
+      #services-div>section:first-child>p {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.5rem;
+        letter-spacing: 0.05rem;
+        margin-top: 5px;
+        padding: 0px 50px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      #services-div>section:last-child>div{
+        flex-basis: 100%;
+        background-size: 160% 200%;
+        height: 298px;
+        margin: 26px 47px;
+      }
+      #services-div>section:last-child>div>h1 {
+        font-size: 1.5rem;
+      }
+      #services-div>section:last-child>div>p{
+        font-size: 1rem;
+      }
+      #services-div>section:nth-child(2)>div>div>img {
+        width: 138%;
+        height: 81%;
+        object-fit: cover;
+      }
+
+    }
+    @media all and (min-width: 768px) and (max-width: 1024px){
+
+      #project-container{
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 100px;
+
+
+
+      }
+
+      #project-heder>h1{
+        font-size: 4rem;
+        font-weight: 300;
+        color: black;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        margin-top: 2rem;
+
+      }
+      #project-heder>h1>span{
+        color: crimson;
+      }
+      #project-info>h2{
+        font-size: 2rem;
+        /*color: white;*/
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+      #project-items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #project-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 80%;
+        margin: 0;
+        overflow: hidden;
+        border-radius: 0;
+        height: 400px;
+      }
+      #project-item:nth-child(even){
+        flex-direction: row-reverse;
+      }
+      #project-info{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 30px;
+        flex-basis: 50%;
+        background:linear-gradient(60deg,#29323c 0%,#485564 100%);
+        color: white;
+
+      }
+      #project-info>h1{
+        font-size: 3rem;
+        font-weight:500;
+      }
+      #project-info>h2{
+        font-size: 1rem;
+        margin-top: 10px;
+        font-weight: 500;
+      }
+      #project-info>p{
+        color: white;
+        font-size: 1rem;
+      }
+      #project-img{
+        height: 100%;
+        flex-basis: 50%;
+        overflow: hidden;
+
+      }
+      #project-img>img{
+        transition: .3s ease transform;
+      }
+      #project-item:hover>#project-img>img{
+        transform: scale(1.1);
+      }
+
+
+
+      /*#project-info > h1 {*/
+      /*  font-size: 2rem;*/
+      /*  font-weight: 500;*/
+
+      /*}*/
+
+      /*#project-info > p {*/
+      /*  color: white;*/
+      /*  font-size: 1rem;*/
+      /*}*/
+      /*#project-item {*/
+      /*  display: flex;*/
+      /*  align-items: center;*/
+      /*  justify-content: center;*/
+      /*  flex-direction: column;*/
+      /*  width: 95%;*/
+      /*  margin:10px;*/
+      /*  overflow: hidden;*/
+      /*  border-radius: 0;*/
+      /*  height: 756px;*/
+      /*  margin: -8rem 0;*/
+      /*}*/
+      /*#project-info {*/
+      /*  display: flex;*/
+      /*  height: 100%;*/
+      /*  flex-direction: column;*/
+      /*  justify-content: center;*/
+      /*  align-items: flex-start;*/
+      /*  padding: 14px;*/
+      /*  flex-basis: 30%;*/
+      /*  background: linear-gradient(60deg,#29323c 0%,#485564 100%);*/
+      /*  color: white;*/
+      /*}*/
+
+      /*#project-items{*/
+      /*  display: flex;*/
+      /*  align-items: center;*/
+      /*  justify-content: center;*/
+      /*  flex-direction: column;*/
+      /*  margin: 64px;*/
+      /*}*/
+      /*#project-img {*/
+      /*  height: 100%;*/
+      /*  flex-basis: 28%;*/
+      /*  overflow: hidden;*/
+      /*}*/
+      #project-heder>h1 {
+        font-size: 3rem;
+        font-weight: 300;
+        color: black;
+        margin-bottom: -77px;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        margin-top: -3rem;
+      }
+      /*#project-item:nth-child(even) {*/
+      /*  flex-direction: column;*/
+      /*}*/
+
+    }
+
+    @media all and (min-width: 768px) and (max-width:1024px){
+
+      #skill-header>h1 {
+        font-size: 3rem;
+
+      }
+
+      #skill-items {
+
+        margin-top: 1rem;
+      }
+      #skill-range {
+        width: 600px;
+        background: white;
+        display: block;
+        height: 6px;
+        border: 2px solid crimson;
+        border-radius: 3px;
+        box-shadow: 0 0 10px crimson;
+        position: relative;
+      }
+    }
+
+    @media all and (min-width: 768px) and (max-width:1024px){
+
+      #contact-title > h1 {
+        font-size: 3rem;
+      }
+
+      #contact-items {
+
+        flex-direction: column;
+        padding-left: 86px;
+      }
+      #contact-item{
+        margin-left: 30px;
+      }
+
+      #contact-container {
+        padding-top: 0;
+      }
+
+      .footer-name > h1 {
+
+        font-size: 1.8rem;
+      }
+
+      .footer-container > h2 {
+
+        font-size: 1rem;
+
+      }
+
+      .social-icon {
+        width: 35px;
+
+      }
+
+      .social-icons {
+        margin-bottom: 8px;
+      }
+
+
+      .footer-container {
+        padding-top: 24px;
+        padding-bottom: 0;
+      }
+
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1024px){
+
+      #Aboutme {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1300px;
+        /* padding: 100px 20px; */
+        padding: 148px;
+        margin-top: 170px;
+        margin-bottom: -38px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #Aboutme>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      #Aboutme-aside {
+        width: 100%;
+        position: relative;
+        bottom: 18rem;
+      }
+      #Aboutme-div {
+        border: 7px solid crimson;
+        position: relative;
+        height: 321px;
+        width: 313px;
+        right: -79px;
+        bottom: 240px;
+      }
+      #Aboutme-aside>a{
+        font-size: 1rem;
+      }
+      #Aboutme-div>img {
+        height: 332px;
+        width: 277px;
+        position: relative;
+        left: 0px;
+        bottom: 26px;
+        /* border: 12px solid white; */
+        border-bottom: 7px solid white;
+        border-left: 7px solid white;
+      }
+      #Aboutme-aside>h1{
+        font-size: 2.5rem;
+        margin-top: 4rem;
+      }
+
+
+    }
+    /*///////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+      <div id="loder">
+        <img id="loimg" src="Assests/source.gif">
+      </div>
+      <header>
+        <div>
+          <h1><a href="#"><span>G</span>eeth <span>M</span>alinda</a></h1>
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#skills">skills</a></li>
+              <li><a href="#project">projects</a></li>
+              <li><a href="#Aboutme">about me</a></li>
+              <li><a href="#services">Assignments</a></li>
+              <li><a href="#contac-info">contact</a></li>
+
+            </ul>
+          </nav>
+
+        </div>
+      </header>
+      <section id="firstSection">
+        <section>
+          <div>
+            <h1>Hello,<span></span></h1>
+            <h1>My name is<span></span></h1>
+            <h1 id="marginh1">Geeth<span></span></h1>
+              <a href="#" type="button" >portfolio</a>
+          </div>
+        </section>
+      </section>
+
+
+
+
+      <section id="skills">
+        <div id="skill-container">
+          <div id="skill-header">
+            <h1>Sk<span>i</span>lls</h1>
+          </div>
+          <section>
+            <div id="skill-items">
+              <div id="skill-item">
+                <h1 id="skill-name">Java</h1>
+                <div id="skill-range">
+                   <span id="skill-span" style="width: 80%;">
+
+                      </span>
+
+                </div>
+              </div>
+              <div id="skill-item">
+                <h1 id="skill-name">Html</h1>
+                <div id="skill-range">
+                   <span id="skill-span"
+                         style="width: 90%" >
+
+                      </span>
+
+                </div>
+              </div>
+              <div id="skill-item">
+                <h1 id="skill-name">Javascript</h1>
+                <div id="skill-range">
+                      <span id="skill-span" style="width: 50%">
+
+                      </span>
+                </div>
+              </div>
+              <div id="skill-item">
+                <h1 id="skill-name">Node</h1>
+                <div id="skill-range">
+                      <span id="skill-span" style="width: 20%">
+
+                      </span>
+                </div>
+              </div>
+              <div id="skill-item">
+                <h1 id="skill-name">React</h1>
+                <div id="skill-range">
+                   <span id="skill-span" style="width: 20%">
+
+                      </span>
+
+                </div>
+              </div>
+              <div id="skill-item">
+                <h1 id="skill-name">React-Native</h1>
+                <div id="skill-range">
+                   <span id="skill-span" style="width: 30%">
+
+                      </span>
+
+                </div>
+              </div>
+            </div>
+
+          </section>
+        </div>
+
+
+      </section>
+
+      <section id="project">
+        <div id="project-container">
+          <div id="project-heder">
+            <h1>Pr<span>0</span>jc<span>t</span>s</h1>
+          </div>
+          <section id="project-items">
+            <div id="project-item">
+              <div id="project-info">
+                <h1>Project 1</h1>
+                <h2>This is title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Asperiores et explicabo, harum hic, ipsam laboriosam magnam molestias,
+                  neque saepe suscipit tempora veritatis. Amet culpa dignissimos facere id labore sit vitae?</p>
+              </div>
+              <div id="project-img">
+                <img src="Assests/Grading-Assignment-Blog-Photo.png" alt="img">
+              </div>
+
+            </div>
+
+            <div id="project-item">
+              <div id="project-info">
+                <h1>Project 2</h1>
+                <h2>This is title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Asperiores et explicabo, harum hic, ipsam laboriosam magnam molestias,
+                  neque saepe suscipit tempora veritatis. Amet culpa dignissimos facere id labore sit vitae?</p>
+              </div>
+              <div id="project-img">
+                <img src="Assests/Grading-Assignment-Blog-Photo.png" alt="img">
+              </div>
+
+            </div>
+
+            <div id="project-item">
+              <div id="project-info">
+                <h1>Project 3</h1>
+                <h2>This is title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Asperiores et explicabo, harum hic, ipsam laboriosam magnam molestias,
+                  neque saepe suscipit tempora veritatis. Amet culpa dignissimos facere id labore sit vitae?</p>
+              </div>
+              <div id="project-img">
+                <img src="Assests/Grading-Assignment-Blog-Photo.png" alt="img">
+              </div>
+
+            </div>
+
+            <div id="project-item">
+              <div id="project-info">
+                <h1>Project 4</h1>
+                <h2>This is title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Asperiores et explicabo, harum hic, ipsam laboriosam magnam molestias,
+                  neque saepe suscipit tempora veritatis. Amet culpa dignissimos facere id labore sit vitae?</p>
+              </div>
+              <div id="project-img">
+                <img src="Assests/Grading-Assignment-Blog-Photo.png" alt="img">
+              </div>
+
+            </div>
+          </section>
+        </div>
+      </section>
+
+
+
+
+
+      <section id="Aboutme">
+        <div>
+          <aside id="Aboutme-aside">
+            <h1>About <span>Me</span></h1>
+            <h2>Ful Stack Web Developer</h2>
+            <p>
+              A WebDesigner and Fulstack Developer From Srilanka.<br>
+              Name : Geeth Malinda<br>
+              Age:20<br>
+              Email:kdgmwijesekara22@gmail.com<br>
+              Phone:0774196413
+
+            </p>
+            <a href="#">Download Resume</a>
+          </aside>
+          <figure id="Aboutme-img">
+            <div id="Aboutme-div">
+              <img src="Assests/myphoto1.jpg" alt="img">
+            </div>
+          </figure>
+        </div>
+      </section>
+
+
+
+
+      <section id="services">
+        <div id="services-div">
+          <section>
+            <h1>Ass<span>i</span>gnm<span>e</span>nt</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque cupiditate earum fugit id illo in iste itaque iure, laudantium nemo nesciunt nobis non quia reiciendis repellendus reprehenderit, sit soluta?</p>
+          </section>
+          <section >
+            <div class="asignment-item">
+              <div>
+                <img src="https://img.icons8.com/color/96/000000/homework.png"/>
+              </div>
+              <a href="KnighRider/index3.html" >
+                <h1 id="asignment-title">KnightRider</h1>
+              </a>
+
+              <p>This Assignment Developed By Using Jquery,Html,Css,Bosstrap .This Asignments Shows How to Work with JavaScript TimerFuntions
+              </p>
+            </div>
+            <div class="asignment-item">
+              <div>
+                <img src="https://img.icons8.com/color/96/000000/homework.png"/>
+              </div>
+              <a href="javaScriptGame/Game.html" >
+                <h1 id="asignment-title">Js Simple Game</h1>
+              </a>
+
+              <p>Double Tap Mouse to Jump ,If You Hit You Lose
+              </p>
+            </div>
+
+            <div class="asignment-item">
+              <div>
+                <img src="https://img.icons8.com/color/96/000000/homework.png"/>
+              </div>
+              <a href="posSPA/Login.html" >
+                <h1 id="asignment-title">Single Page Aplication</h1>
+              </a>
+
+              <p>This Asignment Shows How to Implement All Html Code in a Single Page And How To Manipulate It.
+              </p>
+            </div>
+            <div class="asignment-item">
+              <div>
+                <img src="https://img.icons8.com/color/96/000000/homework.png"/>
+              </div>
+              <a href="pos/Login.html" >
+                <h1 id="asignment-title">POS-BOOSTRAP</h1>
+              </a>
+
+              <p>Assignment Of boostrap Pos System Aplication Programing Interface
+                Already Responsived.
+              </p>
+            </div>
+            <div class="asignment-item">
+              <div>
+                <img src="https://img.icons8.com/color/96/000000/homework.png"/>
+              </div>
+              <a href="Slider/Slider2.html">
+                <h1 id="asignment-title">Slider Css</h1>
+              </a>
+              <p>This slider is created by only using html and css.
+              </p>
+            </div>
+            <div class="asignment-item">
+              <div>
+                <img src="https://img.icons8.com/color/96/000000/homework.png"/>
+              </div>
+              <a href="CarAnimation/carAnimation.html">
+                <h1 id="asignment-title">Car Animation</h1>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ab aliquam, atque blanditiis commodi consectetu</p>
+            </div>
+            <div class="asignment-item">
+              <div>
+                <img src="https://img.icons8.com/color/96/000000/homework.png"/>
+              </div>
+              <a href="Weel.html">
+                <h1 id="asignment-title">Magic-Weel</h1>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ab aliquam, atque blanditiis commodi consectetur
+                deleniti </p>
+            </div>
+            <div class="asignment-item">
+              <div>
+                <img src="https://img.icons8.com/color/96/000000/homework.png"/>
+              </div>
+              <a href="TransistionTest.html">
+                <h1 id="asignment-title">Transition-Hover</h1>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ab aliquam, atque blanditiis commodi consectetur
+                deleniti </p>
+            </div>
+            <div class="asignment-item">
+              <div>
+                <img src="https://img.icons8.com/color/96/000000/homework.png"/>
+              </div>
+              <a href="Test1UsingFlex.html">
+                <h1 id="asignment-title">Transition-Hover-Flex</h1>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ab aliquam, atque blanditiis commodi consectetur
+                deleniti </p>
+            </div>
+            <div class="asignment-item">
+              <div>
+                <img src="https://img.icons8.com/color/96/000000/homework.png"/>
+              </div>
+              <a href="CardUsingStickey.html">
+                <h1 id="asignment-title">Card-Assignment</h1>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ab aliquam, atque blanditiis commodi consectetur
+                deleniti </p>
+            </div>
+            <div class="asignment-item">
+              <div>
+                <img src="https://img.icons8.com/color/96/000000/homework.png"/>
+              </div>
+              <a href="WaterDrop.html">
+                <h1 id="asignment-title">WaterDrop</h1>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ab aliquam, atque blanditiis commodi consectetur
+                deleniti </p>
+            </div>
+
+            <div class="asignment-item">
+              <div>
+                <img src="https://img.icons8.com/color/96/000000/homework.png"/>
+              </div>
+              <a href="pos/Login.html" >
+                <h1 id="asignment-title">POS-BOOSTRAP</h1>
+              </a>
+
+              <p>Assignment Of boostrap Pos System Aplication Programing Interface
+                Already Responsived.
+              </p>
+            </div>
+
+          </section>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <section id="Contact">
+        <div id="contact-container">
+          <div id="contact-title"><h1>Contact <span>Info</span></h1></div>
+          <section id="contact-items">
+            <div id="contact-item">
+              <div id="contact-icon">
+                <img src="https://img.icons8.com/bubbles/50/000000/number-pad.png"/>
+              </div>
+              <div id="contac-info">
+                <h1>Phone</h1>
+                <h2>0774196413</h2>
+                <h2>0983234322</h2>
+              </div>
+            </div>
+
+            <div id="contact-item">
+              <div id="contact-icon">
+                <img src="https://img.icons8.com/bubbles/50/000000/email.png"/>
+              </div>
+              <div id="contac-info">
+                <h1>E-mail</h1>
+                <h2>Kdgmwijesekara@gmail.com</h2>
+
+              </div>
+            </div>
+
+            <div id="contact-item">
+              <div id="contact-icon">
+                <img src="https://img.icons8.com/bubbles/50/000000/order-delivered.png"/>
+              </div>
+              <div id="contac-info">
+                <h1>Adress</h1>
+                <h2>wakwella road,kalegana,galle<br>Srilanka</h2>
+                <h2>0983234322</h2>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </section>
+
+
+
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-name">
+            <h1><span>G</span>eeth <span>M</span>linda</h1>
+          </div>
+          <h2>Your complete web solution</h2>
+          <div class="social-icons">
+
+            <div class="social-icon">
+              <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+            </div>
+            <div class="social-icon">
+              <a href="#">
+                <img src="https://img.icons8.com/color/48/000000/github-2.png"/>
+              </a>
+            </div>
+            <div class="social-icon">
+              <a href="#">
+                <img src="https://img.icons8.com/color/48/000000/stackoverflow.png"/>
+              </a>
+            </div>
+            <div class="social-icon">
+              <a href="#"><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png"/></a>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+<script src="Assests/jquery-3.5.1.min.js"></script>
+<script src="js.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashbord2</title>
+  <link rel="stylesheet" href="Assests/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Dashbord.css">
+</head>
+<body>
+<!--////////////////////////////////////////////////////////-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow ">
+        <a class="navbar-brand mr-5" href="#" >Sell-<span class="nav-X">X</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" >
+          <ul class="navbar-nav">
+            <li class="nav-item active ">
+              <a class="nav-link" href="DashBord.html"><i class="fa fa-home">&nbsp;</i><span class="bd-nav">Home</span> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active ">
+              <a class="nav-link" href="Login.html"><i class="fa fa-user">&nbsp;</i><span class="bd-nav">Log Out</span></a>
+            </li>
+            <li class="nav-item active ">
+              <a class="nav-link" href="DashBord.html"><i class="fa fa-backward">&nbsp;</i><span class="bd-nav">Back</span></a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+<!--////////////////////////////////////////////////////////////////-->
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class="profile-info col-sm-12 col-12 col-md-4 col-xl-4 ">
+      <div class="profile-info-div card " style="border: 1px solid orange">
+        <img src="Assests/desktop-user-logo-icon-design-vector-22953805.jpg" class="img-profile card-img-top" alt="Admin">
+        <div class="card-body profile-info-card-body" >
+          <h3 class="card-title">Profile Info</h3>
+          <p class="card-text"><i class="fa fa-user">&nbsp;</i>Geeth Malinda</p>
+          <p class="card-text"><i class="fa fa-user">&nbsp;</i>Admin</p>
+          <a href="editProfile.html" class="btn btn-primary">
+            <i class="fa fa-edit"></i>&nbsp;EditProfile
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-8 col-xl-8" >
+      <div class="new-order jumbotron ">
+        <div class="row" style="display: flex;justify-content: center;align-items: center">
+          <h1 class="new-order-h1"><span>W</span>elcome <span>A</span>dmin</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-6 col-md-0 col-lg-6 col-0" style="display: flex;align-items: center;justify-content: center">
+            <iframe class="new-order-ifram" src="http://free.timeanddate.com/clock/i7e9h9qk/n2231/szw160/szh160/hoc000/hbw4/hfc09f/cf100/hnc07c/hwc000/facfff/fnu2/fdi76/mqcfff/mqs4/mql18/mqw4/mqd60/mhcfff/mhs4/mhl5/mhw4/mhd62/mmv0/hhcfff/hhs1/hhb10/hmcfff/hms1/hmb10/hscfff/hsw3" frameborder="0" width="160" height="160"></iframe>
+
+          </div>
+          <div class="col-xl-6 col-md-12 col-lg-6 col-12">
+            <div class="card new-order-card-body mr-xl-5">
+              <div class="card-body">
+                <h5 class="card-title">Orders</h5>
+                <p class="card-text">Here You can make new Orders</p>
+                <a href="NewOrder.html" class="btn btn-primary"> <i class="fa fa-shopping-cart"></i>&nbsp
+                  Place New Order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+<!--  /////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+  <div class="container-fluid">
+    <div class="row catagory-row">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 pl-xl-0  pl-md-0">
+        <div class="card catagory ">
+          <div class="card-body ">
+            <h5 class="card-title">Catogory</h5>
+            <p class="card-text">Here You can Add and Manage Catagories</p>
+            <!--                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#cata-modal">Add</a>-->
+            <a href="#" class="btn btn-primary" data-target="#catagory" data-toggle="modal">Add</a>
+
+            <a href="ManageCatagory.html" class="btn btn-success">Manage</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mt-sm-auto">
+        <div class="card brand">
+          <div class="card-body ">
+            <h5 class="card-title">Brands</h5>
+            <p class="card-text">Here You can Add and Manage Brands</p>
+            <a href="#" class="btn btn-primary" data-target="#brand" data-toggle="modal">Add</a>
+            <a href="ManageBrand.html" class="btn btn-success">Manage</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 pr-xl-0 pr-md-0">
+        <div class="card product">
+          <div class="card-body ">
+            <h5 class="card-title">Product</h5>
+            <p class="card-text">Here You can Add and Manage Product</p>
+            <a href="#" class="btn btn-primary" data-target="#product" data-toggle="modal">Add</a>
+            <a href="ManageProduct.html" class="btn btn-success">Manage</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="modal fade" id="catagory">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add Catagory</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="catagory-name">Catagory name</label>
+            <input type="catagory-name" class="form-control" id="catagory-name" aria-describedby="emailHelp">
+
+          </div>
+          <div class="form-group">
+            <label for="ctype">Catagory-Type</label>
+            <select type="ctype" class="form-control" id="ctype" aria-describedby="emailHelp">
+              <option value="0">Electronic</option>
+              <option value="1">Software</option>
+              <option value="2">Anti-virus</option>
+              <option value="4">Gadgets</option>
+
+
+
+            </select>
+          </div>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Add Catagory</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+  <div class="modal fade" id="brand">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add Brand</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="brand-name">Brand name</label>
+            <input type="brand-name" class="form-control" id="brand-name" aria-describedby="emailHelp">
+
+          </div>
+
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  ///////////////////////////////////////////////////////////////////-->
+
+  <div class="modal fade" id="product">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add New Product</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="date">Date</label>
+                <input type="date" class="form-control" id="date">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="name">Product Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="pprice">Product Price</label>
+              <input type="text" class="form-control" id="pprice" placeholder="Enter Price Of Product">
+            </div>
+            <div class="form-group">
+              <label for="qty">Quantity</label>
+              <input type="text" class="form-control" id="qty" placeholder="Enter Quentity">
+            </div>
+            <div class="form-group">
+              <label for="ctype1">Catagory</label>
+              <select type="ctype" class="form-control" id="ctype1" aria-describedby="emailHelp">
+                <option value="0">Electronic</option>
+                <option value="1">Software</option>
+                <option value="2">Anti-virus</option>
+                <option value="4">Gadgets</option>
+
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="brandtype1">Brand</label>
+              <select type="brandtype1" class="form-control" id="brandtype1" aria-describedby="emailHelp">
+                <option value="0">Asus</option>
+                <option value="1">acer</option>
+                <option value="2">Hp</option>
+                <option value="4">mac</option>
+
+              </select>
+            </div>
+
+
+            <button type="submit" class="btn btn-success">Add Product</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="Assests/js/jquery-3.5.1.min.js"></script>
+  <script src="Assests/js/bootstrap.min.js"></script>
+</div>
+</body>
+</html>

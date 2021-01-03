@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colorQueue</title>
+
+    <!-- external css & bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+
+    <style>
+        body{
+            margin: 0;
+        }
+        #section>div
+        {
+            width: 150px;
+            height: 150px;
+            border: 2px black solid;
+
+        }
+        #mainsection{
+            margin-top: 10rem;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+<section id="mainsection" class="container-fluid  d-flex  row">
+    <section id="section" class="container-fluid row justify-content-center align-items-center col-12">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section class="col-12 mt-5 d-flex justify-content-center align-items-center">
+        <div id="btnsection" class="btn btn-group row  " style="left: -38px">
+            <button id="btnstart" class="btn-success btn-lg mr-3">Start</button>
+            <button id="btnstop" class="btn-danger btn-lg ml-3">End</button>
+        </div>
+    </section>
+
+
+</section>
+
+
+<script src="jquery-3.5.1.min.js"></script>
+<script>
+
+
+
+    // $("#btnStart").click(function () {
+    //
+    //     clearInterval(timeid);
+    //     timeid = setInterval(colorChanger,600);
+    //
+    // });
+    // function colorChanger() {
+    //
+    //     for (var i = 0; i < colors.length; i++) {
+    //         // $("#section>div:nth-child("+(i+2)+")").css("background",colors[i]);
+    //     }
+    //     var lastvalue = colors.pop();
+    //     colors.unshift(lastvalue);
+    // }
+
+
+    // var colors = ["#ffe6e6","#ff9999","#ff6666","red","white","white","white","white"];
+    // var timeid;
+    // var count=0;
+    //
+    // $("#btnstop").click(function () {
+    //     clearInterval(timeid);
+    // });
+    // $("#btnstart").click(function () {
+    //     clearInterval(timeid);
+    //     timeid= setInterval(colorchange,600);
+    //
+    // })
+    //
+    //
+    // function colorchange() {
+    //     count++;
+    //     console.log(count);
+    //     for (var i = 0; i<colors.length;i++) {
+    //
+    //         $("#section>div:nth-child("+(i+1)+")").css("background",colors[i]);
+    //
+    //     }
+    //     if (count<5){
+    //         // clear();
+    //         let pop = colors.pop();
+    //         colors.unshift(pop);
+    //         console.log(count);
+    //
+    //
+    //     }
+    //     else if (count=5) {
+    //         let s = colors.shift();
+    //         colors.push(s);
+    //
+    //     }
+
+
+    //
+    // if (count<4){
+    //     pop();
+    //     count++;
+    //
+    //
+    // }
+    // else if (count=4){
+    //     count--;
+    //
+    // }
+
+
+
+
+
+
+
+    // function pop() {
+    //     let pop = colors.pop();
+    //     colors.unshift(pop);
+    //     console.log(count);
+    // }
+    // function clear() {
+    //     clearInterval(timeid);
+    // }
+    // function push() {
+    //     let s = colors.shift();
+    //     colors.push(s);
+    //
+    // }
+
+    var colors = ["red","#ff6666","#ff9999","#ffe6e6","white","white","white","white"];
+    var timeid;
+    var count =1;
+    var i =1;
+
+    $("#btnstart").click(function () {
+        clearInterval(timeid);
+        timeid=setInterval(colorchange,50);
+        // alert("saff")
+    });
+    $("#btnstop").click(function () {
+        clearInterval(timeid);
+    })
+    $(window).on("keyup",function (e) {
+        console.log(e.key)
+        if (e.key=="Enter"){
+            clearInterval(timeid);
+            timeid=setInterval(colorchange,50);
+        }
+        else if (e.key=="s"){
+            clearInterval(timeid);
+
+        }
+
+
+    })
+    function colorchange() {
+        if (count>=18){
+            count=1;
+        }
+        if (i<1){
+            i=1;
+        }
+        if (count<9){
+            // if (i==9){
+            //     i=2;
+            // }
+            $("#section>div:nth-child("+(i)+")").css("background",colors[0]);
+            $("#section>div:nth-child("+(i-1)+")").css("background",colors[1]);
+            $("#section>div:nth-child("+(i-2)+")").css("background",colors[2]);
+            $("#section>div:nth-child("+(i-3)+")").css("background",colors[3]);
+            $("#section>div:nth-child("+(i-4)+")").css("background",colors[4]);
+            $("#section>div:nth-child("+(i-5)+")").css("background",colors[5]);
+            $("#section>div:nth-child("+(i-6)+")").css("background",colors[6]);
+            $("#section>div:nth-child("+(i-7)+")").css("background",colors[7]);
+            count++;
+            i++;
+            console.log(count)
+            console.log(i)
+        }
+        else {
+
+            $("#section>div:nth-child("+(i)+")").css("background",colors[0]);
+            $("#section>div:nth-child("+(i+1)+")").css("background",colors[1]);
+            $("#section>div:nth-child("+(i+2)+")").css("background",colors[2]);
+            $("#section>div:nth-child("+(i+3)+")").css("background",colors[3]);
+            $("#section>div:nth-child("+(i+4)+")").css("background",colors[4]);
+            $("#section>div:nth-child("+(i+5)+")").css("background",colors[5]);
+            $("#section>div:nth-child("+(i+6)+")").css("background",colors[6]);
+            $("#section>div:nth-child("+(i+7)+")").css("background",colors[7]);
+            count++;
+            i--;
+            console.log(count)
+            console.log(i)
+        }
+
+
+    }
+
+
+
+
+</script>
+</body>
+
+</html>

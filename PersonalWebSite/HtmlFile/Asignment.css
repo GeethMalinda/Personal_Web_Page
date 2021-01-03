@@ -1,0 +1,319 @@
+#services{
+  /*height: 100vh;*/
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+#services-div{
+
+  flex-direction: row;
+  text-align: center;
+  max-width: 1500px;
+}
+#services-div>section:first-child>h1{
+
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+#services-div>section:first-child>h1>span{
+  color: crimson;
+}
+#services-div>section:first-child>p{
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  letter-spacing: 0.05rem;
+  margin-top: 5px;
+  padding: 0px 50px;
+  margin-bottom: 10px;
+
+
+}
+#services-div>section:last-child{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 25px;
+
+}
+#asignment-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: white;
+}
+#asignment-title:hover{
+  color: greenyellow;
+
+}
+#services-div>section:last-child>div>p{
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.5rem;
+
+}
+#services-div>section:last-child>div>div>img{
+  width: 4rem;
+
+}
+
+
+
+.asignment-item{
+  flex-basis: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url("Assests/blueprints-background-computer-tools-20747977.jpg");
+  border-radius:20px;
+  background-size: cover;
+  margin:1.5%;
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  height: 21rem;
+}
+.asignment-item:nth-child(1){
+  flex-basis: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url("Assests/KnightRiderImg.jpg");
+  border-radius:20px;
+  background-size: cover;
+  margin:1.5%;
+  /*background-size: 100% 200%;*/
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  height: 21rem;
+  background-position: center;
+
+
+}
+.asignment-item:nth-child(2){
+  flex-basis: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url("Assests/hqdefault.jpg");
+  border-radius:20px;
+  background-size: cover;
+  margin:1.5%;
+  /*background-size: 100% 200%;*/
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  height: 21rem;
+  background-position: center;
+
+
+}
+.asignment-item:nth-child(3){
+  flex-basis: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url("Assests/maxresdefault.jpg");
+  border-radius:20px;
+  background-size: cover;
+  margin:1.5%;
+  /*background-size: 100% 200%;*/
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  height: 21rem;
+
+}
+.asignment-item:nth-child(4){
+  flex-basis: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url("Assests/download.jpg");
+  border-radius:20px;
+  background-size: cover;
+  margin:1.5%;
+  /*background-size: 100% 200%;*/
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  height: 21rem;
+
+}
+.asignment-item:nth-child(5){
+  flex-basis: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url("Assests/544020.jpg");
+  border-radius:20px;
+  background-size: cover;
+  margin:1.5%;
+  /*background-size: 100% 200%;*/
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  height: 21rem;
+
+}
+.asignment-item:nth-child(6){
+  flex-basis: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url("Assests/SmallCar-v4.png");
+  border-radius:20px;
+  background-size: cover;
+  margin:1.5%;
+  /*background-size: 100% 200%;*/
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  height: 21rem;
+
+}
+.asignment-item:nth-child(7){
+  flex-basis: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url("Assests/MW_Preview_1280-720.jpg");
+  border-radius:20px;
+  background-size: cover;
+  margin:1.5%;
+  /*background-size: 100% 200%;*/
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  height: 21rem;
+  background-position: center;
+
+}
+.asignment-item:nth-child(8){
+  flex-basis: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url("Assests/animated-skills-bar.jpg");
+  border-radius:20px;
+  background-size: cover;
+  background-position: center;
+  margin:1.5%;
+  /*background-size: 100% 200%;*/
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  height: 21rem;
+
+}
+.asignment-item:nth-child(9){
+  flex-basis: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url("Assests/Animated-Responsive-Skill-Bar-Plugin-jQuery-Simple-SkillBar.jpg");
+  border-radius:20px;
+  background-size: cover;
+  background-position: center;
+  margin:1.5%;
+  /*background-size: 100% 200%;*/
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  height: 21rem;
+
+}
+.asignment-item:nth-child(10){
+  flex-basis: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url("Assests/in-credit-card-400X400-nav-tileimg.jpg");
+  border-radius:20px;
+  background-size: cover;
+  background-position: center;
+  margin:1.5%;
+  /*background-size: 100% 200%;*/
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  height: 21rem;
+
+}
+.asignment-item:nth-child(11){
+  flex-basis: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url("Assests/11973598-waterdrop.jpg");
+  border-radius:20px;
+  background-size: cover;
+  background-position: center;
+  margin:1.5%;
+  /*background-size: 100% 200%;*/
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  height: 21rem;
+
+}
+#services-div>section:last-child>div::after{
+  content: "";
+  background:black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border-radius:20px;
+  opacity: 0.5;
+  z-index: -1;
+
+
+
+}
+
+
+
+
+
+
+

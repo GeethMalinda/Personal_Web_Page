@@ -1,0 +1,79 @@
+#skill-header>h1{
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+#skill-header>h1>span{
+  color: crimson;
+}
+#skill-container{
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+
+}
+#skill-items{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+
+}
+#skill-item{
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 15px 0;
+  flex-direction: column;
+
+}
+#skill-name{
+
+  font-size: 0.7rem ;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  margin: 8px 0;
+
+}
+#skill-range{
+  width: 700px;
+  background: white;
+  display: block;
+  height: 9px;
+  border: 3px solid crimson;
+  border-radius: 3px;
+  box-shadow: 0 0 10px crimson;
+  position: relative;
+}
+#skill-span{
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: crimson;
+  animation: skill-animate 5s ease-in-out forwards;
+  border-radius: 20px;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+
+}
+
+@keyframes skill-animate {
+
+  from{
+    width: 0;
+  }
+}

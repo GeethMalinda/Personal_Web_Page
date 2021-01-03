@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exersise#</title>
+    <style>
+        div{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+            /*animation-direction: reverse;*/
+            /*animation-direction: alternate-reverse;*/
+            animation-name: waterDrop;
+        }
+        @keyframes waterDrop {
+            from{
+                border: 2px solid darkblue;
+                width: 10px;
+                height: 10px;
+            }
+            to{
+                border: 10px solid lightskyblue;
+                width: 300px;
+                height: 300px;
+                opacity: 0;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+
+</body>
+</html>
